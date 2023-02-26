@@ -107,6 +107,59 @@ Modifique o arquivo .gitignore para que o git ignore os arquivos da documentaç�
 
 Crie o arquivo readme.md e adicione algum texto.
 
+Dentro da pasta "src" crie o arquivo "Hello.js" e copie o seguinte código:
+
+```
+/** Class representing a Hello. */
+class Hello {
+     /**
+     * Create a Hello.
+     * @constructor
+     * @param {messagem} msg - The message.
+     */
+    constructor(msg = "World" ) {
+        this.msg = msg;
+    }
+
+    /**
+     * Display de message
+     * @return {string} The message.
+     */
+    toString(){
+        return "Hello " + this.msg;
+    }
+}
+
+export default Hello;
+```
+
+Dentro da pasta "\_\_tests\_\_" crie o arquivo "Hello.test.js" e copie o seguinte código:
+
+```
+import Hello from "../src/Hello";
+
+let h;
+
+beforeEach(
+    () => {
+        h = new Hello();
+    }
+);
+
+test("Hello World",
+    () => {
+        expect(h.toString()).toBe("Hello World");
+    }
+);
+
+test("Hello TADS",
+    () => {
+        let p = new Hello("TADS")
+        expect(p.toString()).toBe("Hello TADS");
+    }
+);
+```
+
 Para executar os testes:
 
 ```
