@@ -13,7 +13,7 @@ Utilize esse repositório caso não deseje configurar um novo.
 Caso deseje clonar esse repositório execute os seguintes comandos:
 
 ```
-git clone https://github.com/taniro/EstruturasDeDados2022.git
+git clone https://github.com/taniro/ED2023.git
 npm install
 npm test
 npm run docs
