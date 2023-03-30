@@ -44,7 +44,7 @@ test("Após adicionar 2 elementos e remover 1, o tamanho é 1",
     }
 );
 
-test("O comando enqueue em uma fila cheia retorna Erro de queueoverflow",
+test("O comando enqueue em uma fila cheia retorna Erro de queue overflow",
     () => {
         expect(() => {
             f.enqueue('A');
@@ -63,7 +63,7 @@ test("O comando enqueue em uma fila cheia retorna Erro de queueoverflow",
     }
 );
 
-test("O comando dequeue em uma fila vazia retorna Erro de queueunderflow",
+test("O comando dequeue em uma fila vazia retorna Erro de queue underflow",
     () => {
         expect(() => {
             f.dequeue();
@@ -71,7 +71,7 @@ test("O comando dequeue em uma fila vazia retorna Erro de queueunderflow",
     }
 );
 
-test("O comando enqueue em uma fila cheia retorna Erro de queueoverflow",
+test("A fila circular move os ponteiros de início e fim",
     () => {
         f.enqueue('A');
         f.enqueue('B');
@@ -82,17 +82,17 @@ test("O comando enqueue em uma fila cheia retorna Erro de queueoverflow",
         f.dequeue();
         f.dequeue();
         expect(f.size()).toBe(3);
-        expect(f.front().toBe('C'));
+        expect(f.front()).toBe('C');
         f.enqueue('F');
         f.enqueue('G');
-        expect(f.size().toBe(5));
-        expect(f.isFull().toBe(true));
+        expect(f.size()).toBe(5);
+        expect(f.isFull()).toBe(true);
         f.dequeue();
         f.dequeue();
         f.dequeue();
         f.dequeue();
         f.dequeue();
-        expect(f.isEmpty().toBe(true));
-        expect(f.size().toBe(0));
+        expect(f.isEmpty()).toBe(true);
+        expect(f.size()).toBe(0);
     }
 );

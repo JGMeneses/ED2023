@@ -9,7 +9,7 @@ class Fila{
     enqueue(dado){
         if (!this.isFull()){
             this.dados[this.fim] = dado;
-            if (this.fim + 1 === this.tam){
+            if (this.fim === this.tam){
                 this.fim = 0;
             }else{
                 this.fim ++;
@@ -18,7 +18,7 @@ class Fila{
     }
     dequeue(){
         if (!this.isEmpty()){
-            if (this.inicio + 1 === this.tam){
+            if (this.inicio === this.tam){
                 this.inicio = 0
             }else{
                 this.inicio++
