@@ -1,4 +1,5 @@
 class Fila{
+
     constructor(tam=5){
         this.dados = [];
         this.inicio = 0;
