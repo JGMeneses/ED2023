@@ -106,12 +106,12 @@ class Pilha{
        while(!pilhaAux.isEmpty()){
             pilhaAux2.push(pilhaAux.top());
             pilhaAux.pop();
-       }
+        }
       
        while(!pilhaAux2.isEmpty()){
-        pilhaAux.push(pilhaAux2.top());
-        pilhaAux2.pop();
-   }
+            pilhaAux.push(pilhaAux2.top());
+            pilhaAux2.pop();
+        }
        
     
        return pilhaAux.TextoBinario();

@@ -9,7 +9,7 @@ beforeEach(() => {
 test('Deve inverter a ordem dos elementos da pilha', () => {
   p.push(10);
   const pConversorDecimal = p.ConversorDecimal(p);
- 
+  
   
   expect(pConversorDecimal).toBe('1010');
 });
