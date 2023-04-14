@@ -18,13 +18,16 @@ class Fila{
     }
     dequeue(){
         if(!this.isEmpty()){
+            let retorno;
+            retorno = this.dados[this.inicio];
             if(this.inicio === this.tam){
                 this.inicio = 0;
-
             }else{
-                this.inicio++;
+                this.inicio++;  
             }
+            return retorno;
         }else throw Error("Queue underflow")
+        
     }
     front(){
         if(!this.isEmpty()){
@@ -57,6 +60,6 @@ class Fila{
         }
         return result;
     }
-
+    
 }
 export default Fila;

@@ -41,8 +41,8 @@ class Pilha2F{
             if(i < this.filaAux1.size() - 1) {
                 result += ',';
             }
-            this.filaAux1.enqueue(this.filaAux1.front());
-            this.filaAux1.dequeue();
+            this.filaAux1.enqueue(this.filaAux1.dequeue());
+            ;
         }
         return result;
     }

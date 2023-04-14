@@ -14,8 +14,12 @@ class Pilha{
         }
     }
     pop(){
+
+        let retorno;
         if(!this.isEmpty()){
+            retorno = this.dados[this.top()];
             this.topo--;
+            return retorno;
         }else{
             throw new Error("Stack underflow");
         }
