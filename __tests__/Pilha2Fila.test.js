@@ -34,13 +34,13 @@ test('Deve adicionar e remover elementos da pilha', () => {
     f.enqueue('B');
     f.enqueue('C');
     f.enqueue('D');
-    f.dequeue('D');
+    f.dequeue();
    
 
   
     
-    const resultado = p.toString();
+  
    
   
-    expect(resultado).toBe('d,C,B,A');
+    expect(f.toString()).toBe('B,C,D');
   });

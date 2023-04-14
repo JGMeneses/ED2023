@@ -28,7 +28,7 @@ class Fila2Pilha{
     dequeue(){
         if(!this.isEmpty()){
             this.pilhaAux.pop();
-        }
+        }else throw Error("Queue underflow")
     }
 
 
@@ -42,8 +42,8 @@ class Fila2Pilha{
 
     toString() {
         let result = "";
-        for (let i = this.pilhaAux.size() - 1; i >= 0; i--) {
-            result += this.pilhaAux.dados[i];
+        for (let i = this.pilhaAux.size()-1; i >= 0; i--) {
+            result += `${this.pilhaAux.dados[i]}`;
             if (i !== 0) {
                 result += ",";
             }
