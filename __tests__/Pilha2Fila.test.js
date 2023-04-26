@@ -1,5 +1,5 @@
-import Pilha from "../src/Pilha2Fila";
-import Fila from "../src/Fila2Pilha";
+import Pilha from "../src/Fila/Pilha2Fila";
+import Fila from "../src/Fila/Fila2Pilha";
 
 let p;
 let f;

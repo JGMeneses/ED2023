@@ -1,4 +1,4 @@
-import FilaCaminhoneiro from "../src/FilaCaminhao";
+import FilaCaminhoneiro from "../src/Fila/FilaCaminhao";
 
 
 let f;

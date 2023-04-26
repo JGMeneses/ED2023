@@ -1,4 +1,4 @@
-import Fila from "../src/Fila";
+import Fila from "../src/Fila/Fila";
 
 let f;
 

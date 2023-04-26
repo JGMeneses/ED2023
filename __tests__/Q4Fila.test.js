@@ -1,4 +1,4 @@
-import Fila  from "../src/FilaQ4";
+import Fila  from "../src/Fila/FilaQ4";
 
 let f, f2;
 let tamanho = 5;

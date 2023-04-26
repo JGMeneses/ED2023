@@ -1,4 +1,4 @@
-import Deque from "../src/Deque";
+import Deque from "../src/Fila/Deque";
 
 
 let d;

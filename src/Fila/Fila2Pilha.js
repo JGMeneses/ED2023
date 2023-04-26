@@ -1,4 +1,4 @@
-import Pilha from "./Pilha";
+import Pilha from "../Pilha/Pilha";
 
 class Fila2Pilha{
     constructor(tam){
